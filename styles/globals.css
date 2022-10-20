@@ -40,13 +40,13 @@ a {
 }
 
 .showcase-title h1 {
-  animation-delay: 0.5s;
+  animation-delay: 0.0s;
 }
 
 .showcase-title h2 {
   font-weight: regular;
   font-size: 2.0em;
-  animation-delay: 1.5s;
+  animation-delay: 0.0s;
   margin-top: 0.5em;
   color: #dcdcdc;
 }
@@ -54,7 +54,7 @@ a {
 .order-now {
   opacity: 0;
   animation: fadein 3s;
-  animation-delay: 2.5s;
+  animation-delay: 2.0s;
   animation-fill-mode: forwards;
   border-radius: 7px;
   margin: 1.0em !important;
@@ -630,8 +630,8 @@ padding: 6px;
   height: 100vh;
   background: transparent url("../public/bg.jpg") no-repeat fixed 50% 60%;
   background-size: cover;
-  opacity: 0.93;
-  box-shadow: inset 0em -10em 8em -6em #000;
+  opacity: 0.90;
+  /box-shadow: inset 0em -10em 8em -6em #000;
 }
 
 .hero-banner-container {
@@ -748,8 +748,8 @@ padding: 6px;
     background-color: white;
   }
   .cart-container{
-    width: 415px;
-  padding: 4px;
+    width: 100vw;
+    padding: 4px;
   }
   .cart-heading{
     margin-top: 35px;
@@ -865,7 +865,5 @@ padding: 6px;
 .product-detail-desc {
   margin: 40px;
 }
-
-
 
 }
