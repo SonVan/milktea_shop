@@ -46,7 +46,7 @@ a {
 .showcase-title h2 {
   font-weight: regular;
   font-size: 2.0em;
-  animation-delay: 0.0s;
+  animation-delay: 1.0s;
   margin-top: 0.5em;
   color: #dcdcdc;
 }
@@ -627,7 +627,7 @@ padding: 6px;
 
 .index-background {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   background: transparent url("../public/bg.jpg") no-repeat fixed 50% 60%;
   background-size: cover;
   opacity: 0.88;
@@ -898,6 +898,15 @@ padding: 6px;
 .banner-desc .right h3 {
   line-height: 1.0;
   margin-bottom: 0.75em;
+}
+
+.index-background {
+  background-position: 0% 0%;
+  background-size: 310%;
+}
+
+.hero-text-container {
+  margin-bottom: 5em;
 }
 
 }
