@@ -24,11 +24,13 @@ const ProductDetails = ({ product, products }) => {
             <img src={urlFor(image && image[index])} className='product-detail-image' />
           </div>
         </div>
+        {console.log(name)}
         <div className='product-detail-desc'>
           <h1>{name}</h1>
           <h4>Details: </h4>
           <p>{details}</p>
           <p className='price'>{price} kr.</p>
+
           <div className='quantity'>
             <h3>Quantity:</h3>
             <p className='quantity-desc'>
@@ -47,6 +49,12 @@ const ProductDetails = ({ product, products }) => {
           <h2>Add more drinks</h2>
           <div className='marquee'>
             <div className='maylike-products-container track'>
+              {products.map((item) => (
+                <Product key={item._id} product={item} />
+              ))}
+              {products.map((item) => (
+                <Product key={item._id} product={item} />
+              ))}
               {products.map((item) => (
                 <Product key={item._id} product={item} />
               ))}

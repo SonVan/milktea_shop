@@ -553,8 +553,9 @@ padding: 6px;
 }
 
 .maylike-products-wrapper{
-  margin-top: 120px;
+  margin-top: -10em;
 }
+
 .maylike-products-wrapper h2{
   text-align: center;
   margin: 50px;
@@ -907,6 +908,10 @@ padding: 6px;
 
 .hero-text-container {
   margin-bottom: 5em;
+}
+
+.maylike-products-wrapper{
+  margin-top: 0em;
 }
 
 }

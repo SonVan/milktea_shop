@@ -19,7 +19,7 @@ const HeroBanner = ({ heroBanner }) => {
             <img src="/check.svg" className="hero-svg"></img>
             Premium quality tea
           </h3>
-          <p>Using only the highest quality natural ingredients, we ensure that our tea is one of the best. </p>
+          <p>Using only the highest quality natural ingredients, we ensure our tea is one of the best. </p>
         </div>
         <div class="hero-text">
           <h3>
