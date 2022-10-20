@@ -12,7 +12,7 @@ const Home = ({ products, bannerData }) => (
     </background>
     <div className='showcase-container'>
       <div class="showcase-title">
-          <h1>AnnVyy Tea</h1>
+          <h1>AnhVy Tea</h1>
           <h2>Milk tea to your doorstep!</h2>
       </div>
       <div class="buttons">
