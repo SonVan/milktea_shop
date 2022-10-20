@@ -2,21 +2,36 @@ import React from 'react'
 
 import { client } from '../lib/client';
 import { Product, FooterBanner, HeroBanner } from '../components';
+import { scrollToMenu } from '../lib/utils';
+
 
 const Home = ({ products, bannerData }) => (
   <div>
-    <HeroBanner heroBanner={bannerData.length && bannerData[0]}  />
-    <div className="products-heading">
-      <h2>Best Seller Products</h2>
-      <p>speaker There are many variations passages</p>
+    <background>
+      <div className="index-background"></div>
+    </background>
+    <div className='showcase-container'>
+      <div class="showcase-title">
+          <h1>AnnVyy Tea</h1>
+          <h2>Milk tea to your doorstep!</h2>
+      </div>
+      <div class="buttons">
+        <button type='button' className='order-now' onClick={scrollToMenu}>Order Now</button>
+      </div>
     </div>
+    <div className='main-inner-container'>
+      <HeroBanner heroBanner={bannerData.length && bannerData[0]}  />
+      <div className="products-heading">
+        <h2>Choose your drinks</h2>
+        <p>Tea of many variations</p>
+      </div>
 
-    <div className="products-container">
-      //{console.log(products)}
-      {products?.map((product) => <Product key={product._id} product={product} />)}
+      <div className="products-container" id="menu">
+        {products?.map((product) => <Product key={product._id} product={product} />)}
+      </div>
+
+      <FooterBanner footerBanner={bannerData && bannerData[0]} />
     </div>
-
-    <FooterBanner footerBanner={bannerData && bannerData[0]} />
   </div>
 );
 
@@ -32,4 +47,6 @@ export const getServerSideProps = async () => {
   }
 }
 
+
 export default Home;
+
