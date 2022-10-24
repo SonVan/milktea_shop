@@ -29,8 +29,7 @@ const ProductDetails = ({ product, products }) => {
           <h1>{name}</h1>
           <h4>Details: </h4>
           <p>{details}</p>
-          <p className='price'>{price} kr.</p>
-
+          <p className='price'>${price}</p>
           <div className='quantity'>
             <h3>Quantity:</h3>
             <p className='quantity-desc'>
